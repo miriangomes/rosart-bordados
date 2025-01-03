@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toalhas e outros - Rosart Bordados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rosartPurple: '#4F004F',
+                        rosartGreen: '#889B59',
+                        rosartLavender: '#7B447B',
+                        rosartLilac: '#AE7CBB',
+                    },
+                    fontFamily: {
+                        sans: ['Arial', 'Helvetica', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="font-sans bg-[#faf5ff]">
+    <!-- Cabeçalho -->
+    <header class="bg-white text-rosartPurple shadow-md fixed w-full top-0 z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="florlogo.png" alt="Rosart Bordados" class="h-20">
+                <span class="text-xl font-bold">Rosart Bordados</span>
+            </div>
+            <nav>
+                    <ul class="flex gap-6 font-medium">
+                        <!-- Link para a página inicial -->
+                        <li><a href="projeto.html" class="hover:text-rosartGreen">Homepage</a></li>
+                        
+                        <!-- Link para a página de serviços -->
+                        <li><a href="projeto.html#servicos" class="hover:text-rosartGreen">Serviços</a></li>
+                        
+                    </ul>                
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner" class="relative mt-20 w-full">
+        <div class="overflow-hidden relative">
+                <img src="bannerfardamentos.png" alt="Promoção 1" class="w-full h-100 object-cover">
+        </div>
+        
+    <!-- Botão "Voltar" -->
+    <div class="container mx-auto px-4 mt-6">
+        <button onclick="history.back()" class="bg-rosartPurple text-white px-4 py-2 rounded shadow-md hover:bg-rosartGreen">
+            &larr; Voltar
+        </button>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto px-4 pt-20 pb-10">
+        <h1 class="text-4xl font-bold text-rosartPurple mb-6 text-center">Toalhas e outros</h1>
+        <p class="text-lg text-gray-700 mb-6 text-center">
+            Conheça nossa coleção de toalhas, nossos kits de cozinha e muito mais.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="p-6 bg-white rounded-lg shadow-md">
+                <img src="kit1.jpg" alt="Kit 1" class="w-full h-40 object-cover rounded-lg mb-4">
+                <h3 class="text-lg font-semibold">Kit 1</h3>
+                <p class="text-gray-600 mt-2">A partir de R$ 150,00</p>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-md">
+                <img src="kit2.jpg" alt="Kit 2" class="w-full h-40 object-cover rounded-lg mb-4">
+                <h3 class="text-lg font-semibold">Kit  2</h3>
+                <p class="text-gray-600 mt-2">A partir de R$ 200,00</p>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-md">
+                <img src="kit3.jpg" alt="Kit 3" class="w-full h-40 object-cover rounded-lg mb-4">
+                <h3 class="text-lg font-semibold">Kit  3</h3>
+                <p class="text-gray-600 mt-2">A partir de R$ 250,00</p>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-md">
+                <img src="kit4.jpg" alt="Kit 4" class="w-full h-40 object-cover rounded-lg mb-4">
+                <h3 class="text-lg font-semibold">Kit 4</h3>
+                <p class="text-gray-600 mt-2">A partir de R$ 250,00</p>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-md">
+                <img src="kit5.jpg" alt="Kit 5" class="w-full h-40 object-cover rounded-lg mb-4">
+                <h3 class="text-lg font-semibold">Kit 3</h3>
+                <p class="text-gray-600 mt-2">A partir de R$ 250,00</p>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-md">
+                <img src="kit6.jpg" alt="Kit 6" class="w-full h-40 object-cover rounded-lg mb-4">
+                <h3 class="text-lg font-semibold">Kit 6</h3>
+                <p class="text-gray-600 mt-2">A partir de R$ 250,00</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Botão Flutuante de WhatsApp -->
+    <div class="fixed bottom-6 right-6">
+        <a href="https://api.whatsapp.com/send?phone=5582993719809&text=Olá,%20gostaria%20de%20mais%20informações!" target="_blank" rel="noopener">
+            <img src="whatsapp-icon.png" alt="WhatsApp" class="w-16 h-16">
+        </a>
+    </div>
+
+    <!-- Rodapé Minimalista -->
+    <footer class="bg-rosartPurple text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Rosart Bordados. Todos os direitos reservados.</p>
+            <p> CNPJ: 58.226.880.0001-07</p>
+        </div>
+    </footer>
+</body>
+</html>
